@@ -28,7 +28,7 @@ async function pingService() {
 async function main() {
 	while (true) {
         await pingService();
-        await new Promise(resolve => setTimeout(resolve, (1000 * 60)));
+        await new Promise(resolve => setTimeout(resolve, (1000 * 60) * 5));
     }
 }
 
